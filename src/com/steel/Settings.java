@@ -8,6 +8,15 @@ public class Settings {
     public static String sqlUser = "TNYCLL";
     public static String sqlPassword = "Tunabir6796.";
 
-    public static String noPermission = "§cYetkin yok!";
+    public static String[] owners = {
+            "TNYCL"
+    };
+
+    public static boolean isAuthorized(String name) {
+        for(String owner : owners) {
+            if(owner.equalsIgnoreCase(name)) return true;
+        }
+        return false;
+    }
 
 }

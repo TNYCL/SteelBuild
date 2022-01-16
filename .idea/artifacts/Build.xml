@@ -5,7 +5,6 @@
       <element id="archive" name="Build.jar">
         <element id="module-output" name="SteelBuild" />
       </element>
-      <element id="file-copy" path="$USER_HOME$/Desktop/spigot.jar" />
     </root>
   </artifact>
 </component>

@@ -1,20 +1,21 @@
-package com.steel.module;
+package com.steel.product.module;
 
 public class Product {
 
     private String uuid;
     private String name;
     private String builder;
-    private int prices;
+    private String theme;
+    private String subject;
+    private int price;
+    private long deadline;
     private long startTime;
     private long finishTime;
     private boolean finished;
 
-    public Product(String uuid, String name, String builder, int price, long startTime) {
+    public Product(String uuid, String name, long startTime) {
         this.uuid = uuid;
         this.name = name;
-        this.builder = builder;
-        this.prices = price;
         this.startTime = startTime;
     }
 
@@ -30,9 +31,15 @@ public class Product {
         return this.builder;
     }
 
+    public String getTheme() { return this.theme; }
+
+    public String getSubject() { return this.subject; }
+
     public int getPrice() {
-        return this.prices;
+        return this.price;
     }
+
+    public long getDeadline() { return this.deadline; }
 
     public long getStartTime() {
         return this.startTime;
@@ -54,9 +61,15 @@ public class Product {
         this.builder = builder;
     }
 
+    public void setTheme(String theme) { this.theme = theme; }
+
+    public void setSubject(String subject) { this.subject = subject; }
+
     public void setPrice(int price) {
         this.price = price;
     }
+
+    public void setDeadline(int deadline) { this.deadline = deadline; }
 
     public void setFinishTime(long finishTime) {
         this.finishTime= finishTime;
