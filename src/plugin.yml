@@ -1,0 +1,17 @@
+name: SteelBuild
+version: 0.1
+author: TNYCL
+main: com.steel.Main
+commands:
+  test:
+    description: Test komut
+    usage: /test
+  deneme:
+    description: Test komut
+    usage: /deneme
+  testkomut:
+    description: Test komut
+    usage: /testkomut
+  adapter:
+    description: Test komut
+    usage: /adapter

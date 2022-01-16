@@ -1,0 +1,4 @@
+name: SteelwareBuild
+version: 0.0.1
+author: TNYCL
+main: com.build.Main
