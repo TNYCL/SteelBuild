@@ -5,7 +5,7 @@ public class Product {
     private String uuid;
     private String name;
     private String builder;
-    private int price;
+    private int prices;
     private long startTime;
     private long finishTime;
     private boolean finished;
@@ -14,7 +14,7 @@ public class Product {
         this.uuid = uuid;
         this.name = name;
         this.builder = builder;
-        this.price = price;
+        this.prices = price;
         this.startTime = startTime;
     }
 
@@ -31,7 +31,7 @@ public class Product {
     }
 
     public int getPrice() {
-        return this.price;
+        return this.prices;
     }
 
     public long getStartTime() {
